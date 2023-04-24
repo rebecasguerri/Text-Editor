@@ -13,7 +13,6 @@ Status: **Finalizado 😃**
   39.5%|27.0%|33.5%
   
 ## Experimente!  [Text-Editor](https://rebecafreitass.github.io/interactive-component/)
-![ezgif com-gif-maker (1)](https://raw.githubusercontent.com/RebecaFreitass/interactive-component/main/images/print.png)
 
 
 
