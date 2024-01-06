@@ -12,7 +12,7 @@ Status: **Finalizado 😃**
   ---|---|---|
   39.5%|27.0%|33.5%
   
-## Experimente!  [Text-Editor](https://rebecafreitass.github.io/Text-Editor/)
+## Experimente!  [Text-Editor](https://rebecasguerri.github.io/Text-Editor/)
 
 
 
