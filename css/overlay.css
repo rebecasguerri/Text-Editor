@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "bebasNeue";
+  src: url("BebasNeue-Regular.ttf");
+}
+.welcome {
+  height: 100vh;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "bebasNeue";
+  line-height: 3rem;
+  font-weight: lighter;
+  gap: 2rem;
+  .material-symbols-outlined {
+    color: white;
+    font-size: 50px;
+  }
+}
+.welcome h1 {
+  letter-spacing: 1.5rem;
+  line-height: 4.5rem;
+}
+.welcome p {
+  color: white;
+}
+
+.overlay {
+  background: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  clip-path: circle(100px at 50% 50%);
+  clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+  transition: clip-path 100ms;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 50px,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.editor {
+  width: 80vw;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.05);
+  padding: 2rem 2rem;
+  background: black;
+  border-radius: 0.5rem;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.btn-sapce {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-content {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.btn-content:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+#text-content {
+  width: 100%;
+  height: 90vh;
+  border: 1px solid rgba(0, 0, 0, 0.122);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+}
+
+footer {
+  height: 10%;
+  text-align: center;
+  background-color: black;
+  padding: 1rem 0;
+  box-shadow: 0px 0px 31px rgba(0, 0, 0, 0.61);
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 712px) {
+  .btn-content {
+    padding: 0.5rem;
+  }
+  main {
+    width: 95vw;
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 562px) {
+  .btn-content {
+    padding: 0.4rem;
+  }
+  main {
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 436px) {
+  main {
+    width: 100vw;
+    padding: 1rem 0.5rem;
+  }
+  .btn-content {
+    padding: 0.6rem;
+  }
+}/*# sourceMappingURL=overlay.css.map */

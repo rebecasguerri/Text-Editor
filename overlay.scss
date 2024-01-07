@@ -2,7 +2,48 @@
     margin: 0;
     box-sizing: border-box;
 }
-main {
+@font-face {
+    font-family:"bebasNeue";
+    src: url("BebasNeue-Regular.ttf");
+}
+
+.welcome{
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family:"bebasNeue";
+    line-height: 3rem;
+    font-weight: lighter;
+    h1{
+        letter-spacing: 1.5rem;
+        line-height: 4.5rem;
+    }
+    p{
+        color:white;
+    }
+}
+.overlay{
+    background:black;
+    color:white;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    clip-path: circle(100px at 50% 50%);
+    clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 100ms;
+    p{
+        color: black;
+    }
+}
+
+
+.editor{
+    display: none;
     width: 80vw;
     margin: 3rem auto;
     box-shadow: 0px 0px 27px rgb(0 0 0 / 5%);
@@ -39,20 +80,20 @@ main {
 }
 footer {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.122);
+    background-color: black;
     padding: 1rem 0;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.064);
-    margin-top: 2rem;
+    box-shadow: 0px 0px 31px rgb(0 0 0 / 61%);
+    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
 }
 footer a{
-    color: rgba(0, 0, 0, 0.442);
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
 footer a:hover{
-    color: black;
+    color: white;
+    text-decoration: underline;
 }
 @media(max-width:712px){
     .btn-content {
